@@ -1,0 +1,84 @@
+{
+    "os": "Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "python": "3.11.3",
+    "heartbeatAt": "2023-06-08T19:00:44.750069",
+    "startedAt": "2023-06-08T19:00:44.019020",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--wandb_project",
+        "wandb-hw",
+        "--wandb_entity",
+        "hdehidi",
+        "--data_artifact",
+        "hdehidi/wandb-hw/NYC-Taxi:v0"
+    ],
+    "state": "running",
+    "program": "/home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/sweep.py",
+    "codePath": "cohorts/2023/02-experiment-tracking/homework-wandb/sweep.py",
+    "git": {
+        "remote": "https://github.com/HDehidi/mlops-zoomcamp.git",
+        "commit": "de0b7bb3eea94a97e8788de3a668dda3ea31bf40"
+    },
+    "email": "HDehidi@github.com",
+    "root": "/home/hdubuntu/mlops-zoomcamp",
+    "host": "LAPTOP-1KVRFRVS",
+    "username": "hdubuntu",
+    "executable": "/home/hdubuntu/anaconda3/envs/wandb/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2803.2099999999996,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2803.21,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2803.21,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2803.21,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2803.21,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2803.21,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2803.21,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2803.21,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2803.21,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 250.98248672485352,
+        "used": 17.441211700439453
+    },
+    "memory": {
+        "total": 7.662590026855469
+    }
+}

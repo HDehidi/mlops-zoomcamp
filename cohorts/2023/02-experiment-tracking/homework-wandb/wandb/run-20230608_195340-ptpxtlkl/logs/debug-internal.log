@@ -1,0 +1,177 @@
+2023-06-08 19:53:40,376 INFO    StreamThr :18008 [internal.py:wandb_internal():86] W&B internal server running at pid: 18008, started at: 2023-06-08 19:53:40.375747
+2023-06-08 19:53:40,378 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: status
+2023-06-08 19:53:40,380 INFO    WriterThread:18008 [datastore.py:open_for_write():85] open: /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/run-ptpxtlkl.wandb
+2023-06-08 19:53:40,381 DEBUG   SenderThread:18008 [sender.py:send():369] send: header
+2023-06-08 19:53:40,381 DEBUG   SenderThread:18008 [sender.py:send():369] send: run
+2023-06-08 19:53:41,009 INFO    SenderThread:18008 [dir_watcher.py:__init__():211] watching files in: /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/files
+2023-06-08 19:53:41,010 INFO    SenderThread:18008 [sender.py:_start_run_threads():1100] run started: ptpxtlkl with start time 1686239620.372899
+2023-06-08 19:53:41,010 DEBUG   SenderThread:18008 [sender.py:send_request():396] send_request: summary_record
+2023-06-08 19:53:41,010 INFO    SenderThread:18008 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-06-08 19:53:41,012 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: check_version
+2023-06-08 19:53:41,013 DEBUG   SenderThread:18008 [sender.py:send_request():396] send_request: check_version
+2023-06-08 19:53:41,073 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: run_start
+2023-06-08 19:53:41,073 DEBUG   HandlerThread:18008 [system_info.py:__init__():31] System info init
+2023-06-08 19:53:41,073 DEBUG   HandlerThread:18008 [system_info.py:__init__():46] System info init done
+2023-06-08 19:53:41,073 INFO    HandlerThread:18008 [system_monitor.py:start():181] Starting system monitor
+2023-06-08 19:53:41,074 INFO    SystemMonitor:18008 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-08 19:53:41,074 INFO    HandlerThread:18008 [system_monitor.py:probe():201] Collecting system info
+2023-06-08 19:53:41,076 INFO    SystemMonitor:18008 [interfaces.py:start():190] Started cpu monitoring
+2023-06-08 19:53:41,076 INFO    SystemMonitor:18008 [interfaces.py:start():190] Started disk monitoring
+2023-06-08 19:53:41,079 INFO    SystemMonitor:18008 [interfaces.py:start():190] Started memory monitoring
+2023-06-08 19:53:41,081 INFO    SystemMonitor:18008 [interfaces.py:start():190] Started network monitoring
+2023-06-08 19:53:41,083 DEBUG   HandlerThread:18008 [system_info.py:probe():195] Probing system
+2023-06-08 19:53:41,083 DEBUG   HandlerThread:18008 [system_info.py:_probe_git():180] Probing git
+2023-06-08 19:53:41,087 DEBUG   HandlerThread:18008 [system_info.py:_probe_git():188] Probing git done
+2023-06-08 19:53:41,087 DEBUG   HandlerThread:18008 [system_info.py:probe():240] Probing system done
+2023-06-08 19:53:41,087 DEBUG   HandlerThread:18008 [system_monitor.py:probe():210] {'os': 'Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'python': '3.11.3', 'heartbeatAt': '2023-06-08T15:53:41.083393', 'startedAt': '2023-06-08T15:53:40.367395', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/preprocess_data.py', 'codePath': 'cohorts/2023/02-experiment-tracking/homework-wandb/preprocess_data.py', 'git': {'remote': 'https://github.com/HDehidi/mlops-zoomcamp.git', 'commit': 'de0b7bb3eea94a97e8788de3a668dda3ea31bf40'}, 'email': 'HDehidi@github.com', 'root': '/home/hdubuntu/mlops-zoomcamp', 'host': 'LAPTOP-1KVRFRVS', 'username': 'hdubuntu', 'executable': '/home/hdubuntu/anaconda3/envs/wandb/bin/python', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2803.2099999999996, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2803.21, 'min': 0.0, 'max': 0.0}, {'current': 2803.21, 'min': 0.0, 'max': 0.0}, {'current': 2803.21, 'min': 0.0, 'max': 0.0}, {'current': 2803.21, 'min': 0.0, 'max': 0.0}, {'current': 2803.21, 'min': 0.0, 'max': 0.0}, {'current': 2803.21, 'min': 0.0, 'max': 0.0}, {'current': 2803.21, 'min': 0.0, 'max': 0.0}, {'current': 2803.21, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 250.98248672485352, 'used': 17.413463592529297}, 'memory': {'total': 7.662590026855469}}
+2023-06-08 19:53:41,087 INFO    HandlerThread:18008 [system_monitor.py:probe():211] Finished collecting system info
+2023-06-08 19:53:41,087 INFO    HandlerThread:18008 [system_monitor.py:probe():214] Publishing system info
+2023-06-08 19:53:41,087 DEBUG   HandlerThread:18008 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-06-08 19:53:41,087 DEBUG   HandlerThread:18008 [system_info.py:_save_pip():67] Saving pip packages done
+2023-06-08 19:53:41,087 DEBUG   HandlerThread:18008 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-06-08 19:53:42,011 INFO    Thread-12 :18008 [dir_watcher.py:_on_file_created():272] file/dir created: /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/files/wandb-summary.json
+2023-06-08 19:53:42,011 INFO    Thread-12 :18008 [dir_watcher.py:_on_file_created():272] file/dir created: /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/files/conda-environment.yaml
+2023-06-08 19:53:42,011 INFO    Thread-12 :18008 [dir_watcher.py:_on_file_created():272] file/dir created: /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/files/requirements.txt
+2023-06-08 19:53:42,864 DEBUG   HandlerThread:18008 [system_info.py:_save_conda():86] Saving conda packages done
+2023-06-08 19:53:42,865 INFO    HandlerThread:18008 [system_monitor.py:probe():216] Finished publishing system info
+2023-06-08 19:53:42,867 DEBUG   SenderThread:18008 [sender.py:send():369] send: files
+2023-06-08 19:53:42,867 INFO    SenderThread:18008 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2023-06-08 19:53:42,873 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-08 19:53:42,873 DEBUG   SenderThread:18008 [sender.py:send_request():396] send_request: stop_status
+2023-06-08 19:53:43,010 INFO    Thread-12 :18008 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/files/conda-environment.yaml
+2023-06-08 19:53:43,010 INFO    Thread-12 :18008 [dir_watcher.py:_on_file_created():272] file/dir created: /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/files/wandb-metadata.json
+2023-06-08 19:53:43,145 DEBUG   SenderThread:18008 [sender.py:send():369] send: telemetry
+2023-06-08 19:53:43,148 DEBUG   SenderThread:18008 [sender.py:send():369] send: exit
+2023-06-08 19:53:43,148 INFO    SenderThread:18008 [sender.py:send_exit():574] handling exit code: 1
+2023-06-08 19:53:43,148 INFO    SenderThread:18008 [sender.py:send_exit():576] handling runtime: 1
+2023-06-08 19:53:43,148 INFO    SenderThread:18008 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-06-08 19:53:43,148 INFO    SenderThread:18008 [sender.py:send_exit():582] send defer
+2023-06-08 19:53:43,148 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 19:53:43,148 INFO    HandlerThread:18008 [handler.py:handle_request_defer():170] handle defer: 0
+2023-06-08 19:53:43,149 DEBUG   SenderThread:18008 [sender.py:send_request():396] send_request: defer
+2023-06-08 19:53:43,149 INFO    SenderThread:18008 [sender.py:send_request_defer():598] handle sender defer: 0
+2023-06-08 19:53:43,149 INFO    SenderThread:18008 [sender.py:transition_state():602] send defer: 1
+2023-06-08 19:53:43,149 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 19:53:43,149 INFO    HandlerThread:18008 [handler.py:handle_request_defer():170] handle defer: 1
+2023-06-08 19:53:43,150 DEBUG   SenderThread:18008 [sender.py:send_request():396] send_request: defer
+2023-06-08 19:53:43,150 INFO    SenderThread:18008 [sender.py:send_request_defer():598] handle sender defer: 1
+2023-06-08 19:53:43,150 INFO    SenderThread:18008 [sender.py:transition_state():602] send defer: 2
+2023-06-08 19:53:43,150 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 19:53:43,150 INFO    HandlerThread:18008 [handler.py:handle_request_defer():170] handle defer: 2
+2023-06-08 19:53:43,150 INFO    HandlerThread:18008 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-08 19:53:43,150 DEBUG   SystemMonitor:18008 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-08 19:53:43,150 DEBUG   SystemMonitor:18008 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-08 19:53:43,150 DEBUG   SystemMonitor:18008 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-08 19:53:43,151 INFO    HandlerThread:18008 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-08 19:53:43,151 INFO    HandlerThread:18008 [interfaces.py:finish():202] Joined disk monitor
+2023-06-08 19:53:43,152 INFO    HandlerThread:18008 [interfaces.py:finish():202] Joined memory monitor
+2023-06-08 19:53:43,152 INFO    HandlerThread:18008 [interfaces.py:finish():202] Joined network monitor
+2023-06-08 19:53:43,152 DEBUG   SenderThread:18008 [sender.py:send_request():396] send_request: defer
+2023-06-08 19:53:43,152 INFO    SenderThread:18008 [sender.py:send_request_defer():598] handle sender defer: 2
+2023-06-08 19:53:43,152 INFO    SenderThread:18008 [sender.py:transition_state():602] send defer: 3
+2023-06-08 19:53:43,152 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 19:53:43,152 INFO    HandlerThread:18008 [handler.py:handle_request_defer():170] handle defer: 3
+2023-06-08 19:53:43,153 DEBUG   SenderThread:18008 [sender.py:send_request():396] send_request: defer
+2023-06-08 19:53:43,153 INFO    SenderThread:18008 [sender.py:send_request_defer():598] handle sender defer: 3
+2023-06-08 19:53:43,153 INFO    SenderThread:18008 [sender.py:transition_state():602] send defer: 4
+2023-06-08 19:53:43,153 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 19:53:43,153 INFO    HandlerThread:18008 [handler.py:handle_request_defer():170] handle defer: 4
+2023-06-08 19:53:43,153 DEBUG   SenderThread:18008 [sender.py:send_request():396] send_request: defer
+2023-06-08 19:53:43,153 INFO    SenderThread:18008 [sender.py:send_request_defer():598] handle sender defer: 4
+2023-06-08 19:53:43,153 INFO    SenderThread:18008 [sender.py:transition_state():602] send defer: 5
+2023-06-08 19:53:43,154 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 19:53:43,154 INFO    HandlerThread:18008 [handler.py:handle_request_defer():170] handle defer: 5
+2023-06-08 19:53:43,154 DEBUG   SenderThread:18008 [sender.py:send():369] send: summary
+2023-06-08 19:53:43,154 INFO    SenderThread:18008 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-06-08 19:53:43,154 DEBUG   SenderThread:18008 [sender.py:send_request():396] send_request: defer
+2023-06-08 19:53:43,154 INFO    SenderThread:18008 [sender.py:send_request_defer():598] handle sender defer: 5
+2023-06-08 19:53:43,154 INFO    SenderThread:18008 [sender.py:transition_state():602] send defer: 6
+2023-06-08 19:53:43,155 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 19:53:43,155 INFO    HandlerThread:18008 [handler.py:handle_request_defer():170] handle defer: 6
+2023-06-08 19:53:43,155 DEBUG   SenderThread:18008 [sender.py:send_request():396] send_request: defer
+2023-06-08 19:53:43,155 INFO    SenderThread:18008 [sender.py:send_request_defer():598] handle sender defer: 6
+2023-06-08 19:53:43,158 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: status_report
+2023-06-08 19:53:43,435 INFO    SenderThread:18008 [sender.py:transition_state():602] send defer: 7
+2023-06-08 19:53:43,436 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 19:53:43,436 INFO    HandlerThread:18008 [handler.py:handle_request_defer():170] handle defer: 7
+2023-06-08 19:53:43,436 DEBUG   SenderThread:18008 [sender.py:send_request():396] send_request: defer
+2023-06-08 19:53:43,436 INFO    SenderThread:18008 [sender.py:send_request_defer():598] handle sender defer: 7
+2023-06-08 19:53:43,747 INFO    wandb-upload_0:18008 [upload_job.py:push():133] Uploaded file /tmp/tmpnpjrmmjhwandb/qb7ye60l-wandb-metadata.json
+2023-06-08 19:53:43,880 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-08 19:53:44,011 INFO    Thread-12 :18008 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/files/wandb-summary.json
+2023-06-08 19:53:44,011 INFO    Thread-12 :18008 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/files/config.yaml
+2023-06-08 19:53:44,011 INFO    Thread-12 :18008 [dir_watcher.py:_on_file_created():272] file/dir created: /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/files/output.log
+2023-06-08 19:53:45,153 INFO    SenderThread:18008 [sender.py:transition_state():602] send defer: 8
+2023-06-08 19:53:45,153 DEBUG   SenderThread:18008 [sender.py:send_request():396] send_request: poll_exit
+2023-06-08 19:53:45,154 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 19:53:45,154 INFO    HandlerThread:18008 [handler.py:handle_request_defer():170] handle defer: 8
+2023-06-08 19:53:45,154 DEBUG   SenderThread:18008 [sender.py:send_request():396] send_request: defer
+2023-06-08 19:53:45,154 INFO    SenderThread:18008 [sender.py:send_request_defer():598] handle sender defer: 8
+2023-06-08 19:53:45,154 INFO    SenderThread:18008 [job_builder.py:build():232] Attempting to build job artifact
+2023-06-08 19:53:45,155 INFO    SenderThread:18008 [job_builder.py:build():256] is repo sourced job
+2023-06-08 19:53:45,157 INFO    SenderThread:18008 [job_builder.py:build():297] adding wandb-job metadata file
+2023-06-08 19:53:45,163 INFO    SenderThread:18008 [sender.py:transition_state():602] send defer: 9
+2023-06-08 19:53:45,163 DEBUG   SenderThread:18008 [sender.py:send():369] send: artifact
+2023-06-08 19:53:45,165 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 19:53:45,165 INFO    HandlerThread:18008 [handler.py:handle_request_defer():170] handle defer: 9
+2023-06-08 19:53:46,013 INFO    Thread-12 :18008 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/files/output.log
+2023-06-08 19:53:46,450 INFO    SenderThread:18008 [sender.py:send_artifact():1450] sent artifact job-https___github.com_HDehidi_mlops-zoomcamp.git_cohorts_2023_02-experiment-tracking_homework-wandb_preprocess_data.py - {'id': 'QXJ0aWZhY3Q6NDgxNjk2NjIx', 'digest': '3e89d1218a102e3b5caca5021e8ffa55', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_HDehidi_mlops-zoomcamp.git_cohorts_2023_02-experiment-tracking_homework-wandb_preprocess_data.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_HDehidi_mlops-zoomcamp.git_cohorts_2023_02-experiment-tracking_homework-wandb_preprocess_data.py', 'alias': 'v0'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjc1NTA3Nzg1', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDgxNjk2NjIx', 'versionIndex': 0}}, 'version': 'v0'}
+2023-06-08 19:53:46,450 DEBUG   SenderThread:18008 [sender.py:send_request():396] send_request: defer
+2023-06-08 19:53:46,451 INFO    SenderThread:18008 [sender.py:send_request_defer():598] handle sender defer: 9
+2023-06-08 19:53:46,451 INFO    SenderThread:18008 [dir_watcher.py:finish():359] shutting down directory watcher
+2023-06-08 19:53:47,014 INFO    SenderThread:18008 [dir_watcher.py:finish():389] scan: /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/files
+2023-06-08 19:53:47,014 INFO    SenderThread:18008 [dir_watcher.py:finish():403] scan save: /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/files/output.log output.log
+2023-06-08 19:53:47,014 INFO    SenderThread:18008 [dir_watcher.py:finish():403] scan save: /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/files/conda-environment.yaml conda-environment.yaml
+2023-06-08 19:53:47,014 INFO    SenderThread:18008 [dir_watcher.py:finish():403] scan save: /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/files/config.yaml config.yaml
+2023-06-08 19:53:47,020 INFO    SenderThread:18008 [dir_watcher.py:finish():403] scan save: /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/files/wandb-metadata.json wandb-metadata.json
+2023-06-08 19:53:47,020 INFO    SenderThread:18008 [dir_watcher.py:finish():403] scan save: /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/files/requirements.txt requirements.txt
+2023-06-08 19:53:47,021 INFO    SenderThread:18008 [dir_watcher.py:finish():403] scan save: /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/files/wandb-summary.json wandb-summary.json
+2023-06-08 19:53:47,026 INFO    SenderThread:18008 [sender.py:transition_state():602] send defer: 10
+2023-06-08 19:53:47,029 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 19:53:47,029 INFO    HandlerThread:18008 [handler.py:handle_request_defer():170] handle defer: 10
+2023-06-08 19:53:47,030 DEBUG   SenderThread:18008 [sender.py:send_request():396] send_request: defer
+2023-06-08 19:53:47,030 INFO    SenderThread:18008 [sender.py:send_request_defer():598] handle sender defer: 10
+2023-06-08 19:53:47,030 INFO    SenderThread:18008 [file_pusher.py:finish():159] shutting down file pusher
+2023-06-08 19:53:47,637 INFO    wandb-upload_1:18008 [upload_job.py:push():133] Uploaded file /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/files/output.log
+2023-06-08 19:53:47,890 INFO    wandb-upload_0:18008 [upload_job.py:push():133] Uploaded file /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/files/conda-environment.yaml
+2023-06-08 19:53:47,928 INFO    wandb-upload_4:18008 [upload_job.py:push():133] Uploaded file /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/files/wandb-summary.json
+2023-06-08 19:53:47,936 INFO    wandb-upload_3:18008 [upload_job.py:push():133] Uploaded file /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/files/requirements.txt
+2023-06-08 19:53:47,952 INFO    wandb-upload_2:18008 [upload_job.py:push():133] Uploaded file /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/files/config.yaml
+2023-06-08 19:53:48,153 INFO    Thread-11 (_thread_body):18008 [sender.py:transition_state():602] send defer: 11
+2023-06-08 19:53:48,154 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 19:53:48,154 INFO    HandlerThread:18008 [handler.py:handle_request_defer():170] handle defer: 11
+2023-06-08 19:53:48,155 DEBUG   SenderThread:18008 [sender.py:send_request():396] send_request: defer
+2023-06-08 19:53:48,155 INFO    SenderThread:18008 [sender.py:send_request_defer():598] handle sender defer: 11
+2023-06-08 19:53:48,155 INFO    SenderThread:18008 [file_pusher.py:join():164] waiting for file pusher
+2023-06-08 19:53:48,155 INFO    SenderThread:18008 [sender.py:transition_state():602] send defer: 12
+2023-06-08 19:53:48,156 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 19:53:48,156 INFO    HandlerThread:18008 [handler.py:handle_request_defer():170] handle defer: 12
+2023-06-08 19:53:48,158 DEBUG   SenderThread:18008 [sender.py:send_request():396] send_request: defer
+2023-06-08 19:53:48,158 INFO    SenderThread:18008 [sender.py:send_request_defer():598] handle sender defer: 12
+2023-06-08 19:53:48,453 INFO    SenderThread:18008 [sender.py:transition_state():602] send defer: 13
+2023-06-08 19:53:48,454 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 19:53:48,454 INFO    HandlerThread:18008 [handler.py:handle_request_defer():170] handle defer: 13
+2023-06-08 19:53:48,454 DEBUG   SenderThread:18008 [sender.py:send_request():396] send_request: defer
+2023-06-08 19:53:48,454 INFO    SenderThread:18008 [sender.py:send_request_defer():598] handle sender defer: 13
+2023-06-08 19:53:48,455 INFO    SenderThread:18008 [sender.py:transition_state():602] send defer: 14
+2023-06-08 19:53:48,455 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 19:53:48,456 INFO    HandlerThread:18008 [handler.py:handle_request_defer():170] handle defer: 14
+2023-06-08 19:53:48,457 DEBUG   SenderThread:18008 [sender.py:send():369] send: final
+2023-06-08 19:53:48,457 DEBUG   SenderThread:18008 [sender.py:send():369] send: footer
+2023-06-08 19:53:48,457 DEBUG   SenderThread:18008 [sender.py:send_request():396] send_request: defer
+2023-06-08 19:53:48,457 INFO    SenderThread:18008 [sender.py:send_request_defer():598] handle sender defer: 14
+2023-06-08 19:53:48,458 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-08 19:53:48,459 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: server_info
+2023-06-08 19:53:48,460 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: get_summary
+2023-06-08 19:53:48,460 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: sampled_history
+2023-06-08 19:53:48,461 DEBUG   SenderThread:18008 [sender.py:send_request():396] send_request: poll_exit
+2023-06-08 19:53:48,462 DEBUG   SenderThread:18008 [sender.py:send_request():396] send_request: server_info
+2023-06-08 19:53:48,715 INFO    MainThread:18008 [wandb_run.py:_footer_history_summary_info():3467] rendering history
+2023-06-08 19:53:48,716 INFO    MainThread:18008 [wandb_run.py:_footer_history_summary_info():3499] rendering summary
+2023-06-08 19:53:48,716 INFO    MainThread:18008 [wandb_run.py:_footer_sync_info():3426] logging synced files
+2023-06-08 19:53:48,717 DEBUG   HandlerThread:18008 [handler.py:handle_request():144] handle_request: shutdown
+2023-06-08 19:53:48,717 INFO    HandlerThread:18008 [handler.py:finish():854] shutting down handler
+2023-06-08 19:53:49,461 INFO    WriterThread:18008 [datastore.py:close():298] close: /home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/wandb/run-20230608_195340-ptpxtlkl/run-ptpxtlkl.wandb
+2023-06-08 19:53:49,715 INFO    SenderThread:18008 [sender.py:finish():1526] shutting down sender
+2023-06-08 19:53:49,716 INFO    SenderThread:18008 [file_pusher.py:finish():159] shutting down file pusher
+2023-06-08 19:53:49,716 INFO    SenderThread:18008 [file_pusher.py:join():164] waiting for file pusher

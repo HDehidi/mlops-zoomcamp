@@ -1,0 +1,56 @@
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m Project hdehidi/wand-hw does not contain artifact: "NYC-Taxi:v0"
+Traceback (most recent call last):
+  File "/home/hdubuntu/anaconda3/envs/wandb/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hdubuntu/anaconda3/envs/wandb/lib/python3.11/site-packages/wandb/apis/public.py", line 928, in artifact
+    artifact = artifacts.PublicArtifact(self.client, entity, project, artifact_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hdubuntu/anaconda3/envs/wandb/lib/python3.11/site-packages/wandb/sdk/artifacts/public_artifact.py", line 225, in __init__
+    self._attrs = attrs or self._load()
+                           ^^^^^^^^^^^^
+  File "/home/hdubuntu/anaconda3/envs/wandb/lib/python3.11/site-packages/wandb/sdk/artifacts/public_artifact.py", line 998, in _load
+    raise ValueError(
+ValueError: Project hdehidi/wand-hw does not contain artifact: "NYC-Taxi:v0"
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/train.py", line 66, in <module>
+    run_train()
+  File "/home/hdubuntu/anaconda3/envs/wandb/lib/python3.11/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hdubuntu/anaconda3/envs/wandb/lib/python3.11/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/hdubuntu/anaconda3/envs/wandb/lib/python3.11/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hdubuntu/anaconda3/envs/wandb/lib/python3.11/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hdubuntu/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/train.py", line 41, in run_train
+    artifact = wandb.use_artifact(data_artifact, type="preprocessed_dataset")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hdubuntu/anaconda3/envs/wandb/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 342, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hdubuntu/anaconda3/envs/wandb/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 332, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hdubuntu/anaconda3/envs/wandb/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2675, in use_artifact
+    artifact = public_api.artifact(type=type, name=name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hdubuntu/anaconda3/envs/wandb/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/hdubuntu/anaconda3/envs/wandb/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hdubuntu/anaconda3/envs/wandb/lib/python3.11/site-packages/wandb/apis/public.py", line 928, in artifact
+    artifact = artifacts.PublicArtifact(self.client, entity, project, artifact_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hdubuntu/anaconda3/envs/wandb/lib/python3.11/site-packages/wandb/sdk/artifacts/public_artifact.py", line 225, in __init__
+    self._attrs = attrs or self._load()
+                           ^^^^^^^^^^^^
+  File "/home/hdubuntu/anaconda3/envs/wandb/lib/python3.11/site-packages/wandb/sdk/artifacts/public_artifact.py", line 998, in _load
+    raise ValueError(
+wandb.errors.CommError: Project hdehidi/wand-hw does not contain artifact: "NYC-Taxi:v0"

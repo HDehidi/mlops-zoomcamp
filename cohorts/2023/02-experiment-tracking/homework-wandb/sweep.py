@@ -27,7 +27,9 @@ def run_train(data_artifact: str):
 
     # Define the XGBoost Regressor Mode, train the model and perform prediction
     # TODO: Pass the parameters n_estimators, min_samples_split, min_samples_leaf from `config` to `RandomForestRegressor`
-    rf = RandomForestRegressor(max_depth=config.max_depth, random_state=0)
+    model_params = {"n_estimators": 100, "min_samples_split": 6, "min_samples_leaf": 3}
+    wandb.config = model_params
+    rf = RandomForestRegressor(max_depth=config.max_depth, random_state=0, **model_params)
     rf.fit(X_train, y_train)
     y_pred = rf.predict(X_val)
 
