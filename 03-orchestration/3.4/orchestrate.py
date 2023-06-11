@@ -43,10 +43,11 @@ def add_features(
     ]
 ):
     """Add features to the model"""
-    df_train["PU_DO"] = df_train["PULocationID"] + "_" + df_train["DOLocationID"]
+    df_train["PU_DO"] = df_train["PULocationID"] + \
+        "_" + df_train["DOLocationID"]
     df_val["PU_DO"] = df_val["PULocationID"] + "_" + df_val["DOLocationID"]
 
-    categorical = ["PU_DO"]  #'PULocationID', 'DOLocationID']
+    categorical = ["PU_DO"]  # 'PULocationID', 'DOLocationID']
     numerical = ["trip_distance"]
 
     dv = DictVectorizer()
@@ -103,7 +104,8 @@ def train_best_model(
         pathlib.Path("models").mkdir(exist_ok=True)
         with open("models/preprocessor.b", "wb") as f_out:
             pickle.dump(dv, f_out)
-        mlflow.log_artifact("models/preprocessor.b", artifact_path="preprocessor")
+        mlflow.log_artifact("models/preprocessor.b",
+                            artifact_path="preprocessor")
 
         mlflow.xgboost.log_model(booster, artifact_path="models_mlflow")
     return None
