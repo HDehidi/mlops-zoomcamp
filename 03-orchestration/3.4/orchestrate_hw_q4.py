@@ -10,6 +10,7 @@ import mlflow
 import xgboost as xgb
 from prefect import flow, task
 from prefect.artifacts import create_markdown_artifact
+from prefect_email import EmailServerCredentials, email_send_message
 
 
 @task(retries=3, retry_delay_seconds=2)
@@ -150,6 +151,20 @@ def hw_flow(
     # Train
     train_best_model(X_train, X_val, y_train, y_val, dv)
 
+
+@flow
+def example_email_send_message_flow(email_addresses: List[str]):
+    email_server_credentials = EmailServerCredentials.load("prefect-email")
+    for email_address in email_addresses:
+        subject = email_send_message.with_options(name=f"email {email_address}").submit(
+            email_server_credentials=email_server_credentials,
+            subject="Example Flow Notification using Gmail",
+            msg="This proves email_send_message works!",
+            email_to=email_address,
+        )
+
+
+example_email_send_message_flow(["ashrafshareef992@gmail.com"])
 
 if __name__ == "__main__":
     main_flow()
