@@ -130,7 +130,7 @@ def train_best_model(
 
 
 @flow
-def main_flow(
+def hw_flow(
     train_path: str = "03-orchestration/data/green_tripdata_2023-02.parquet",
     val_path: str = "03-orchestration/data/green_tripdata_2023-03.parquet",
 ) -> None:
