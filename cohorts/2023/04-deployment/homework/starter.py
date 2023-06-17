@@ -3,7 +3,8 @@
 
 import pandas as pd
 import pickle
-get_ipython().system('pip freeze | grep scikit-learn')
+import sys
+# get_ipython().system('pip freeze | grep scikit-learn')
 
 
 with open('model.bin', 'rb') as f_in:
@@ -26,8 +27,8 @@ def read_data(filename):
     return df
 
 
-year = 2022
-month = 2
+year = int(sys.argv[1])  # 2022
+month = int(sys.argv[2])  # 2
 
 df = read_data(
     f'https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_{year:04d}-{month:02d}.parquet')
@@ -37,24 +38,4 @@ dicts = df[categorical].to_dict(orient='records')
 X_val = dv.transform(dicts)
 y_pred = model.predict(X_val)
 
-
-# Q1: Calculating the standard deviation of the predicted duration.
-y_pred.std()
-
-
-# Q2. Preparing the output
-taxi_type = 'yellow'
-output_file = f'output/{taxi_type}-{year:04d}-{month:02d}.parquet'
-
-df['ride_id'] = f'{year:04d}/{month:02d}_' + df.index.astype('str')
-
-df_result = pd.DataFrame()
-df_result['ride_id'] = df['ride_id']
-df_result['predictions'] = y_pred
-
-df_result.to_parquet(
-    output_file,
-    engine='pyarrow',
-    compression=None,
-    index=False
-)
+print(y_pred.mean())
