@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/237778797249656005
+creation_time: 1686981094779
+experiment_id: '237778797249656005'
+last_update_time: 1686981094779
+lifecycle_stage: active
+name: green-taxi-duration

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/237778797249656005/1c62cfae552b448e948eec5d997e6cb7/artifacts
+end_time: 1686981388347
+entry_point_name: ''
+experiment_id: '237778797249656005'
+lifecycle_stage: active
+run_id: 1c62cfae552b448e948eec5d997e6cb7
+run_name: burly-hare-149
+run_uuid: 1c62cfae552b448e948eec5d997e6cb7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1686981375271
+status: 3
+tags: []
+user_id: hdubuntu
