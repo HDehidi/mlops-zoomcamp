@@ -24,14 +24,15 @@
 [**Module 4: Model Deployment**](04-deployment)
 
 * [Homework](04-deployment/homework.md)
+* [Solution](04-deployment/homework_solution)
 
-**Module 5**
+[**Module 5: Model Monitoring**](05-monitoring/)
 
-* TBA
+* [Homework](05-monitoring/homework.md)
 
-**Module 6**
+[**Module 6: Best Practices**](06-best-practices)
 
-* TBA
+* [Homework](06-best-practices/homework.md)
 
 
 **Projects**
